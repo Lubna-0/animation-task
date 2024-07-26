@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e4c6bd; 
+    margin: 0;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 3.5em;
+    color: #fff;
+}
+
+.eye-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+}
+
+.eye {
+    width: 120px; 
+    height: 160px;
+    background-color: #e6f0ff; 
+    border-radius: 50px; 
+   position: relative;
+    border: 2px solid #333;
+    overflow: hidden;
+}
+
+.pupil {
+    width: 50px; 
+    height: 80px;
+    background-color: #000;
+    border-radius: 40px; 
+    position: absolute;
+    top: 40px;
+    left: 15px; 
+    animation: move 2s infinite alternate; 
+
+@keyframes move {
+    from {
+        transform: translateX(0); 
+    }
+    to {
+        transform: translateX(30px);
+    }
+}
